@@ -70,6 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/File/*.pm
 %dir %{perl_vendorarch}/auto/File/FcntlLock
-%{perl_vendorarch}/auto/File/FcntlLock/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/File/FcntlLock/*.so
 %{_mandir}/man3/*
