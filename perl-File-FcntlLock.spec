@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	File
 %define		pnam	FcntlLock
 %include	/usr/lib/rpm/macros.perl
 Summary:	File::FcntlLock - File locking with fcntl(2)
-#Summary(pl.UTF-8):	
 Name:		perl-File-FcntlLock
 Version:	0.14
 Release:	4
@@ -14,12 +13,9 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/File/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	261aa44a9806181ae8fdf49bead7f828
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/File-FcntlLock/
+URL:		http://search.cpan.org/dist/File-FcntlLock/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,9 +36,6 @@ To create a new object representing a flock structure call new():
 
 You also can pass the new() method a set of key-value pairs to
 initialize the objects properties, e.g. use
-
-# %description -l pl.UTF-8
-# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
