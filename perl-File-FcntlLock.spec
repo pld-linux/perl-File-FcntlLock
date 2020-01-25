@@ -4,7 +4,6 @@
 
 %define		pdir	File
 %define		pnam	FcntlLock
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::FcntlLock - File locking with fcntl(2)
 Name:		perl-File-FcntlLock
 Version:	0.14
