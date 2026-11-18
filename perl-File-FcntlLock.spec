@@ -6,13 +6,14 @@
 %define		pnam	FcntlLock
 Summary:	File::FcntlLock - File locking with fcntl(2)
 Name:		perl-File-FcntlLock
-Version:	0.14
-Release:	18
-License:	unknown
+Version:	0.22
+Release:	1
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/File/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	261aa44a9806181ae8fdf49bead7f828
-URL:		http://search.cpan.org/dist/File-FcntlLock/
+Source0:	https://www.cpan.org/modules/by-module/File/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	579698d735d864ee403674f1175f789d
+URL:		https://metacpan.org/dist/File-FcntlLock
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
