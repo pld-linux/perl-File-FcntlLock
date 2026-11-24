@@ -7,7 +7,7 @@
 Summary:	File::FcntlLock - File locking with fcntl(2)
 Name:		perl-File-FcntlLock
 Version:	0.22
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
